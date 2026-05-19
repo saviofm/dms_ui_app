@@ -1,0 +1,116 @@
+{
+  "_version": "1.84.0",
+  "sap.app": {
+    "id": "dmsuiapp",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.24.0",
+      "toolsId": "2fcb08e8-a236-43cc-957b-0c252c8d7245"
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "DMS-FILEADMIN": {
+          "semanticObject": "DMS",
+          "action": "FILEADMIN",
+          "title": "{{DMS-FILEADMIN.flpTitle}}",
+          "subTitle": "{{DMS-FILEADMIN.flpSubtitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.148.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "dmsuiapp.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "dmsuiapp.view",
+        "async": true,
+        "viewPath": "dmsuiapp.view"
+      },
+      "routes": [
+        {
+          "name": "Routedms_ui",
+          "pattern": ":?query:",
+          "target": [
+            "Targetdms_ui"
+          ]
+        }
+      ],
+      "targets": {
+        "Targetdms_ui": {
+          "id": "dms_ui",
+          "name": "dms_ui"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "dmsuiapp.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "dmsuiapp"
+  }
+}
