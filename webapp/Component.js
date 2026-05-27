@@ -13,13 +13,15 @@ sap.ui.define([
         },
 
         init() {
-            // call the base component's init function
             UIComponent.prototype.init.apply(this, arguments);
 
-            // set the device model
-            this.setModel(models.createDeviceModel(), "device");
+            sap.ui.loader.config({
+                paths: {
+                    "com/sap/ecm/reuse/admin": "/comsapecmreuse.comsapecmreuseadmin-1.0.0"
+                }
+            });
 
-            // enable routing
+            this.setModel(models.createDeviceModel(), "device");
             this.getRouter().initialize();
         }
     });

@@ -49,15 +49,25 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.148.0",
+      "minUI5Version": "1.120.0",
       "libs": {
         "sap.m": {},
-        "sap.ui.core": {}
+        "sap.ui.core": {},
+        "sap.ui.unified": {}
       }
     },
     "contentDensities": {
       "compact": true,
       "cozy": true
+    },
+    "componentUsages": {
+      "admin": {
+        "name": "com.sap.ecm.reuse.admin",
+        "lazy": true,
+        "settings": {
+          "destinationPath": "/api"
+        }
+      }
     },
     "models": {
       "i18n": {

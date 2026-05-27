@@ -4,7 +4,8 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("dmsuiapp.controller.dms_ui", {
-        onInit() {
+        onComponentCreated(oEvent) {
+            this._oAdmin = oEvent.getParameter("component");
         }
     });
 });

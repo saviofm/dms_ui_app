@@ -1,6 +1,18 @@
 <mvc:View controllerName="dmsuiapp.controller.dms_ui"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    displayBlock="true">
     <Page id="page" title="{i18n>title}">
+        <content>
+            <core:ComponentContainer
+                id="sdi-container"
+                usage="admin"
+                height="100%"
+                width="100%"
+                async="true"
+                manifest="true"
+                componentCreated=".onComponentCreated"/>
+        </content>
     </Page>
 </mvc:View>
