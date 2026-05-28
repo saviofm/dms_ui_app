@@ -7,12 +7,11 @@
         <content>
             <core:ComponentContainer
                 id="sdi-container"
-                usage="admin"
+                usage="documentTable"
                 height="100%"
                 width="100%"
                 async="true"
-                manifest="true"
-                componentCreated=".onComponentCreated"/>
+                manifest="true"/>
         </content>
     </Page>
 </mvc:View>

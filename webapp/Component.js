@@ -17,7 +17,7 @@ sap.ui.define([
 
             sap.ui.loader.config({
                 paths: {
-                    "com/sap/ecm/reuse/admin": "/comsapecmreuse.comsapecmreuseadmin-1.0.0"
+                    "com/sap/ecm/reuse/documentTable": "/comsapecmreuse.comsapecmreusedocumentTable-1.0.0"
                 }
             });
 

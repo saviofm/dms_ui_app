@@ -61,10 +61,12 @@
       "cozy": true
     },
     "componentUsages": {
-      "admin": {
-        "name": "com.sap.ecm.reuse.admin",
+      "documentTable": {
+        "name": "com.sap.ecm.reuse.documentTable",
         "lazy": true,
         "settings": {
+          "repositoryId": "446d00cf-1164-46e2-b265-c2a9ce56c0ba",
+          "objectId": "e89bd27000fdaa717035b0a6",
           "destinationPath": "/api"
         }
       }

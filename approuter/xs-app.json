@@ -22,6 +22,18 @@
       "endpoint": "ecmservice"
     },
     {
+      "source": "^/sap/bc/lrep/(.*)$",
+      "target": "/sap/bc/lrep/$1",
+      "authenticationType": "none",
+      "destination": "ui5"
+    },
+    {
+      "source": "^/comsapecmreuse.comsapecmreusedocumentTable-1.0.0/(.*)$",
+      "target": "/comsapecmreuse.comsapecmreusedocumentTable-1.0.0/$1",
+      "destination": "dmsuiapp_html_repo_host",
+      "authenticationType": "xsuaa"
+    },
+    {
       "source": "^/comsapecmreuse.comsapecmreuseadmin-1.0.0/(.*)$",
       "target": "/comsapecmreuse.comsapecmreuseadmin-1.0.0/$1",
       "destination": "dmsuiapp_html_repo_host",
