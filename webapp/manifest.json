@@ -65,8 +65,8 @@
         "name": "com.sap.ecm.reuse.documentTable",
         "lazy": true,
         "settings": {
-          "repositoryId": "446d00cf-1164-46e2-b265-c2a9ce56c0ba",
-          "objectId": "e89bd27000fdaa717035b0a6",
+          "repositoryId": "8c102e74-d256-4456-b7eb-384e37a4a1ec",
+          "objectId": "e175278000c4838591c481a6",
           "destinationPath": "/api"
         }
       }
